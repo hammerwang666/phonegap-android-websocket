@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;"/>
+    <meta content="always" name="referrer">
+    <title>Impact Game</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jstween.min.js"></script>
+    <script type="text/javascript" src="http://yjd.ags.com:9900/b/js/tdata.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bet.css" />
+</head>
+<body scrolling="no">
+<div id="game" class="game" >
+<div class="layer">
+    <img id="bet_bg" src="img/bet_bg.png">
+</div>
+<div class="layer">
+    <img id="center_bg" class="layer" src="img/center_bg_1.png">
+    <div id="center_default" class="layer" style="display:block">
+        <img class="layer" src="img/center_default.png">
+        <div class="center_time">
+            <img class="layer" src="img/border.png">
+            <span id="bet_gs">连线中...</span>
+        </div>
+    </div>
+    <div id="center_lucky" style="display:none" class="layer">
+        <img class="layer" src="img/center_lucky.png">
+        <div id="lucky_view">
+            <div id="lucky_view_0" class="lucky_view_img">
+            </div>
+            <div id="lucky_view_1" class="lucky_view_img">
+            </div>
+            <div id="lucky_view_2" class="lucky_view_img">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bet" class="layer">
+    <div class="top">
+        <div id="top_record" class="bet_record">
+            <img id="top_record_bg" class="layer" src="img/border.png">
+            <span id="bet_foods" class="layer">战绩：0</span>
+            <img id="top_record_s" class="layer" src="img/r_closed.png">
+        </div>
+        <div id="top_record_p" class="bet_record">
+            <img id="top_record_p_bg" class="layer" src="img/border_p.png">
+            <span id="top_record_p_t" class="layer">&nbsp;打印奖品</span>
+        </div>
+        <div class="bet_money">
+            <img class="bet_ingot" src="img/ingot.png">
+            <span id="bet_money">11110元</span>
+        </div>
+    </div>
+    <div class="record_l">
+        <img class="layer" src="img/border.png">
+        <div class="layer" style="z-index:100;">
+            <span>开奖历史</span>
+            <div id="record_c" >
+                <table id="bet_history">
+                    <tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <table id="foods" border="0" cellspacing="0" cellpadding="0">
+    </table>
+    <table  id="buttons_i" class="layer" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <div>
+                    <img id="buttons_i_food_0" class="btn_food layer">
+                    <img id="buttons_i_normal_0" class="layer" src="img/button/normal/l1.png">
+                    <img id="buttons_i_down_0" class="layer nshow" src="img/button/down/l1.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_1" class="btn_food layer">
+                    <img id="buttons_i_normal_1" class="layer" src="img/button/normal/l2.png">
+                    <img id="buttons_i_down_1" class="layer nshow" src="img/button/down/l2.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_2" class="btn_food layer">
+                    <img id="buttons_i_normal_2" class="layer" src="img/button/normal/l3.png">
+                    <img id="buttons_i_down_2" class="layer nshow" src="img/button/down/l3.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_3" class="btn_food layer">
+                    <img id="buttons_i_normal_3" class="layer" src="img/button/normal/l4.png">
+                    <img id="buttons_i_down_3" class="layer nshow" src="img/button/down/l4.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_4" class="btn_food layer">
+                    <img id="buttons_i_normal_4" class="layer" src="img/button/normal/r4.png">
+                    <img id="buttons_i_down_4" class="layer nshow" src="img/button/down/r4.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_5" class="btn_food layer">
+                    <img id="buttons_i_normal_5" class="layer" src="img/button/normal/r3.png">
+                    <img id="buttons_i_down_5" class="layer nshow" src="img/button/down/r3.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_6" class="btn_food layer">
+                    <img id="buttons_i_normal_6" class="layer" src="img/button/normal/r2.png">
+                    <img id="buttons_i_down_6" class="layer  nshow" src="img/button/down/r2.png">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img id="buttons_i_food_7" class="btn_food layer">
+                    <img id="buttons_i_normal_7" class="layer" src="img/button/normal/r1.png">
+                    <img id="buttons_i_down_7" class="layer nshow" src="img/button/down/r1.png">
+                </div>
+            </td>
+        </tr>
+        <tr id="buttons_i_m">
+        </tr>
+        <tr id="buttons_i_n">
+        </tr>
+    </table>
+    <table id="buttons_btn" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <div onclick="onbet(0);" onselectstart="return false;" >&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(1);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(2);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(3);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(4);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(5);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(6);" onselectstart="return false;">&nbsp;</div>
+            </td>
+            <td>
+                <div onclick="onbet(7);" onselectstart="return false;">&nbsp;</div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="my_record" class="layer" style="z-index:200;display:none;">
+    <div id="my_r_c">
+        <table>
+        </table>
+    </div>
+    <div id="my_r_c_b" class="layer" style="z-index:-1">
+
+    </div>
+</div>
+<div id="bet_cong" class="layer" style="z-index:200;display:none">
+    <div class="layer">
+        <img id="bet_cong_bg" src="img/congraduation.png">
+    </div>
+    <div class="layer">
+        <img id="bet_cong_dish" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_cong_food" class="layer" src="img/tmp/135_394575.jpg">
+    </div>
+    <span id="bet_cong_c">x&nbsp;1</span>
+    <span id="bet_cong_m">￥15</span>
+    <span id="bet_cong_n">红烧猪蹄</span>
+</div>
+<div id="bet_none" class="layer" style="z-index:200;display:none">
+    <div class="layer">
+        <img id="bet_none_bg" src="img/none.png">
+    </div>
+</div>
+<div id="bet_bp" class="layer" style="z-index:200;display:none">
+    <div class="layer">
+        <img id="bet_bp_bg" src="img/bp.png">
+    </div>
+    <div id="bet_bp_0" class="layer" style="display:none;">
+        <img id="bet_bp_dish_0" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_0" class="layer">
+        <span id="bet_bp_n_0" class="layer"></span>
+    </div>
+    <div id="bet_bp_1" class="layer" style="display:none;">
+        <img id="bet_bp_dish_1" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_1" class="layer">
+        <span id="bet_bp_n_1" class="layer"></span>
+    </div>
+    <div id="bet_bp_2" class="layer" style="display:none;">
+        <img id="bet_bp_dish_2" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_2" class="layer">
+        <span id="bet_bp_n_2" class="layer"></span>
+    </div>
+    <div id="bet_bp_3" class="layer" style="display:none;">
+        <img id="bet_bp_dish_3" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_3" class="layer">
+        <span id="bet_bp_n_3" class="layer"></span>
+    </div>
+    <div id="bet_bp_4" class="layer" style="display:none;">
+        <img id="bet_bp_dish_4" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_4" class="layer">
+        <span id="bet_bp_n_4" class="layer"></span>
+    </div>
+    <div id="bet_bp_5" class="layer" style="display:none;">
+        <img id="bet_bp_dish_5" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_5" class="layer">
+        <span id="bet_bp_n_5" class="layer"></span>
+    </div>
+    <div id="bet_bp_6" class="layer" style="display:none;">
+        <img id="bet_bp_dish_6" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_6" class="layer">
+        <span id="bet_bp_n_6" class="layer"></span>
+    </div>
+    <div id="bet_bp_7" class="layer" style="display:none;">
+        <img id="bet_bp_dish_7" class="layer" src="img/dish_bg_2.png">
+        <img id="bet_bp_food_7" class="layer">
+        <span id="bet_bp_n_7" class="layer"></span>
+    </div>
+</div>
+<div class="tips"></div>
+</div>
+<script type="text/javascript" src="js/bet_local.js"></script>
+</body>
+</html>

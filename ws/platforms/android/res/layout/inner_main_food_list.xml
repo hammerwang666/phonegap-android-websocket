@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_inner_food"
+    android:layout_width="fill_parent"
+    android:background="@drawable/selector_main_food_bg"
+    android:layout_height="210dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selecter_main_food_list"
+        android:orientation="vertical">
+        <!-- 厨师推荐-->
+
+        <LinearLayout
+            android:id="@+id/main_more_food_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_food_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.0dip"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="#ff7e00"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="top">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="3.0dip"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:text="更多"
+                    android:textColor="@color/deepGray"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/arrow_right2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/dividor1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/main_recommond_padding">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/main_food_wrap_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp">
+
+                        <ImageView
+                            android:id="@+id/main_food_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_bg_1" />
+
+
+                        <LinearLayout
+                            android:id="@+id/food_wrap_1"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/food_wrap"
+                                android:scaleType="fitXY"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/food_sold_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/food_not_available_cover"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/food_chosen1"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/icon_chosen"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_food_single_name1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="舒服舒服"
+                            android:textColor="@color/deepGray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/main_food_single_price1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="232"
+                            android:textColor="@color/orange"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/main_food_wrap_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp">
+
+                        <ImageView
+                            android:id="@+id/main_food_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_bg_1" />
+
+
+                        <LinearLayout
+                            android:id="@+id/food_wrap_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/food_wrap"
+                                android:scaleType="fitXY"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/food_sold_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/food_not_available_cover"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/food_chosen2"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/icon_chosen"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_food_single_name2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="舒服舒服"
+                            android:textColor="@color/deepGray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/main_food_single_price2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="232"
+                            android:textColor="@color/orange"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/main_food_wrap_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp">
+
+                        <ImageView
+                            android:id="@+id/main_food_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_bg_1" />
+
+
+                        <LinearLayout
+                            android:id="@+id/food_wrap_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/food_wrap"
+                                android:scaleType="fitXY"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/food_sold_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/food_not_available_cover"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/food_chosen3"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_height="fill_parent">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/icon_chosen"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_food_single_name3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="舒服舒服"
+                            android:textColor="@color/deepGray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/main_food_single_price3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="232"
+                            android:textColor="@color/orange"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 菜品推荐 end-->
+</LinearLayout>

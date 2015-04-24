@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="android:checkboxStyle">@style/order_food_checkbox</item>
+    </style>
+
+    <style name="order_food_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+        <item name="android:button">@drawable/order_food_checkbox_selector</item>
+
+    </style>
+
+</resources>

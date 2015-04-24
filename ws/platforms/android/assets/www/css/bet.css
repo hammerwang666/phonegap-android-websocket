@@ -1,0 +1,281 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	width: 100%;
+	overflow: hidden;
+}
+div{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+img{
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+td,tr{
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+.game{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: #ffdf16;
+	overflow: hidden;
+}
+.layer{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	z-index: -1;
+}
+.bet_bg{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#bet{
+	z-index: 0;
+}
+#bet .top{
+	background: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffdf16;
+}
+.bet_exit{
+	height: 100%;
+	vertical-align: top;
+}
+.bet_record{
+	display: inline-block;
+	background: transparent;
+	vertical-align: middle;
+}
+.bet_record span{
+	vertical-align:middle;
+	display: block;
+	margin-left: 5px;
+}
+.bet_money{
+	display: inline-block;
+	background: transparent;
+	vertical-align: middle;
+}
+#top_record{
+	margin-left: 30px;
+}
+.bet_ingot{
+	margin-left: 10px;
+	vertical-align: middle;
+}
+#bet_money{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#bet .record_l{
+	background: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	overflow: hidden;
+}
+.record_l span{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 12px;
+	position: absolute;
+}
+#record_c{
+	display:inline-block;
+	z-index:100;
+	overflow-y:hidden;
+	overflow-x:scroll;
+}
+#record_c::-webkit-scrollbar {display:none}
+#top_record_s{
+	display: inline-block;
+	z-index: 100;
+}
+#bet_history{
+	margin-top: 2px;
+	display: block;
+	border-collapse: collapse;
+}
+#bet_history img{
+	margin: 1px;
+}
+#bet_foods{
+	display: inline-block;
+}
+#foods{
+	background: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffdf16;
+	border-collapse:collapse;
+	margin-top: 8px;
+}
+
+.center_time{
+	width: 80px;
+	height: 25px;
+}
+.center_time img{
+	width: 80px;
+	height: 25px;
+}
+.center_time span{
+	line-height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	display: block;
+}
+#buttons_i_m{
+	font-size: 13px;
+	text-align: center;
+}
+#buttons_i_n{
+	font-size: 11px;
+	text-align: center;
+}
+#buttons_i_n td{
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.nshow{
+	display: none;
+}
+.tshow{
+	display: block;
+}
+#buttons_btn div{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+.bet_ans{
+	position: absolute;
+}
+.tips{
+	background: black;
+	position:absolute;
+	z-index: 200;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.80;
+	opacity:0.80;
+	border-radius: 5px;
+	padding: 5px;
+	display: none;
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+#bet_cong{
+	width: 100%;
+	height: 100%;
+}
+#bet_bp{
+	width: 100%;
+	height: 100%;
+}
+#bet_cong_dish{
+	position: absolute;
+}
+
+#bet_cong span{
+	font-size: 30px;
+	vertical-align: middle;
+	position: absolute;
+	color: #ad2326;
+	font-weight: bold;
+}
+#bet_cong_m{
+	width: 100%;
+	text-align: center;
+}
+#bet_cong_n{
+	width: 100%;
+	text-align: center;
+}
+#bet_bp_m{
+	width: 100%;
+	text-align: center;
+}
+#bet_bp_n{
+	width: 100%;
+	text-align: center;
+}
+#bet_bp span{
+	color: #ad2326;
+	text-align: center;
+	font-size: 12px;
+}
+
+#lucky_view{
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.lucky_view_img{
+	position: absolute;
+	display: inline-block;
+}
+#my_r_c{
+	background: #0d0b07;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	border-radius: 10px;
+	vertical-align: middle;
+	text-align: center;
+	overflow: auto;
+	position: absolute;
+	border:solid 1px #6b4f23;
+}
+#my_r_c table{
+	border-collapse: collapse;
+	margin: -1px;
+}
+#my_r_c::-webkit-scrollbar {display:none}
+#my_r_c td{
+	text-align: left;
+	vertical-align: middle;
+	border-collapse: collapse;
+}
+#my_r_c tr{
+	height: 34px;
+	border:solid 1px #6b4f23;
+}
+#my_r_c img{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	margin-left: 8px;
+	border-radius: 15px;
+	margin-top: 1px;
+}
+#my_r_c .rc_lr{
+	width: 50px;
+}
+#my_record{
+	width: 100%;
+	height: 100%;
+}
+#my_r_c_b{
+	width: 100%;
+	height: 100%;
+}

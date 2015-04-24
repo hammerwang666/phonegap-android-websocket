@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fdfbfa</color>
+    <color name="darkgray">#938192</color>
+    <color name="lightgreen">#7cd12e</color>
+    <color name="middlegreen">#45bd36</color>
+    <color name="lightgray">#ececec</color>
+    <color name="lightgray1">#f8f8f8</color>
+    <color name="middleGray">#dddddd</color>
+    <color name="orange">#ff7e00</color>
+    <color name="red">#ff3d17</color>
+    <color name="deepGray">#63656a</color>
+    <color name="orange_pressed">#e97300</color>
+
+    <color name="login_form_line">#aaaaaa</color>
+</resources>

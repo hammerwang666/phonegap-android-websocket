@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray1"
+    android:orientation="vertical"
+    tools:context=".CustomerMainActivity">
+
+    <!-- 顶部栏 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/personal_center"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_topbtn"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/personal_center" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/main_title"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="23sp" />-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="8"
+            android:paddingLeft="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="left|center_vertical"
+            android:id="@+id/search_food_enter"
+            android:paddingLeft="25dp"
+            android:layout_width="200dp"
+            android:paddingTop="1dp"
+            android:editable="false"
+            android:layout_marginTop="1dp"
+            android:focusable="false"
+            android:background="@drawable/search_bg1"
+            android:text="搜索菜名"
+            android:textSize="15sp"
+            android:textColor="@color/deepGray"
+            android:layout_height="30dp" />
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/search_food_enter"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:gravity="center_horizontal|center_vertical"-->
+            <!--android:layout_height="50dp"-->
+            <!-->-->
+            <!--<Button-->
+                <!--android:id="@+id/search_food_enter_btn"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:visibility="visible"-->
+                <!--android:background="@drawable/search_btn"/>-->
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/order_food_enter"
+            android:layout_width="100dp"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="17sp"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:text="点菜" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_topbtn"
+            android:visibility="gone"
+            android:id="@+id/main_food_count_layout"
+            android:paddingLeft="3dp">
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/main_select_count"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/main_food_count"
+                android:text="0"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="33dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 顶部栏 end -->
+
+    <!-- 操作栏 begin-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgray1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/main_call_list_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <Button
+                    android:id="@+id/call_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@color/lightgray1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/call_list"
+                    android:textColor="@color/deepGray"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="-1dp"
+                        android:background="@drawable/icon_call_waiter" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@color/middleGray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/scan_btn_wrap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <Button
+                    android:id="@+id/scan_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@color/lightgray1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/scan_order"
+                    android:textColor="@color/deepGray"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/icon_scan" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@color/middleGray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/gaming_btn_wrap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <Button
+                    android:id="@+id/gaming_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@color/lightgray1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/game"
+                    android:textColor="@color/deepGray"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/icon_game" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- 操作栏 end-->
+
+    <ScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 轮播 begin-->
+                <LinearLayout
+                    android:id="@+id/indexScrollImgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <!-- 轮播 end-->
+
+
+                <com.qnear.ags.customerclient.ui.Util.ListViewForScrollView
+                    android:id="@+id/main_food_list"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:paddingTop="10dp"
+                    android:layout_height="fill_parent"
+                    android:divider="@null" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

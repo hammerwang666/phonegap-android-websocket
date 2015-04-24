@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/selector_my_order_bg"
+    android:gravity="center_vertical|right"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/lightgray" />
+
+        <TextView
+            android:id="@+id/order_food_num"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:text="10菜"
+            android:textColor="@color/deepGray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="2000元"
+            android:textColor="@color/deepGray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="2014-10-22 22:22:22"
+            android:textColor="@color/deepGray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/arrow_right2" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/lightgray" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pay_img"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/icon_pay" />
+
+    <ImageView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dividor"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+</RelativeLayout>

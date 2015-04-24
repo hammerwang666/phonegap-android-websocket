@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".CustomerMainActivity"
+    android:orientation="vertical">
+    
+    <!-- 顶部栏 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar_bg">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/btn_back_layout"
+            android:background="@drawable/selector_topbtn"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/btn_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="3dp" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="点菜"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="23sp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_weight="1" />-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="8"
+            android:paddingLeft="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="left|center_vertical"
+                android:id="@+id/search_food_enter"
+                android:paddingLeft="25dp"
+                android:layout_width="200dp"
+                android:paddingTop="1dp"
+                android:editable="false"
+                android:layout_marginTop="1dp"
+                android:focusable="false"
+                android:background="@drawable/search_bg1"
+                android:text="搜索菜名"
+                android:textSize="15sp"
+                android:textColor="@color/deepGray"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:id="@+id/btn_right"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginRight="10.0dip"-->
+            <!--android:background="@drawable/setting"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="right" />-->
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 顶部栏 end -->
+
+    <LinearLayout
+        android:id="@+id/order_food_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list1"
+            android:layout_width="105dp"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+             />
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@android:id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/white">
+
+        </ListView>
+
+    </LinearLayout>
+    <!-- 操作栏 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/order_food_bottom"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/total_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:singleLine="true"
+                android:text="0菜"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:text=" 0元"
+                android:textColor="@color/orange"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rechoose_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10.0dip"
+            android:text="重选"
+            android:textSize="18sp"
+            android:background="@drawable/selector_red_btn"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/confirm_order"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10.0dip"
+            android:text="确认"
+            android:textSize="18sp"
+            android:background="@drawable/selector_common_middle_btn"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+    <!-- 操作栏 end -->
+</LinearLayout>

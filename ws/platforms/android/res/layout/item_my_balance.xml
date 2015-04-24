@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/deepGray"
+        android:textSize="16sp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:text="东北饺子馆"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/deepGray"
+        android:textSize="16sp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:text="余额:"/>
+
+    <TextView
+        android:id="@+id/balance_val"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/deepGray"
+        android:textSize="16sp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:text="2000元"/>
+
+    <TextView
+        android:id="@+id/is_curr"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:text="当前餐馆"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dividor1"/>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="95dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:divider="#dddddd">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_weight="1"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:background="@drawable/food_not_available_cover"
+        android:id="@+id/order_food_unavailable_cover" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:textSize="16sp"
+            android:textColor="@color/deepGray" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/add_food"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/order_food_checkbox_selector" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/food_unavailable_tip"
+            android:visibility="gone"
+            android:textColor="@color/deepGray"
+            android:text="售罄"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginRight="12dp" />
+    </LinearLayout>
+</LinearLayout>
