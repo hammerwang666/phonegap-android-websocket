@@ -4,9 +4,8 @@
     <feature name="WebSocket">
         <param name="android-package" value="com.knowledgecode.cordova.websocket.WebSocket" />
     </feature>
-    <name>娱点</name>
+    <name>name</name>
     <description>
-        娱点点餐APP
     </description>
     <author email="365711684@qq.com" href="">
         Zeng Fan

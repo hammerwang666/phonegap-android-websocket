@@ -11,45 +11,9 @@
         </activity>
         <activity android:configChanges="orientation|keyboardHidden" android:launchMode="singleTop" android:name="com.qnear.ags.customerclient.ui.CaptureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.CustomerMainActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.widget.OrderFoodActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.ConfirmOrder" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.PayActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.PersonalCenterActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.CallListActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.BindPhoneActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.RechargeActivity" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.qnear.ags.customerclient.ui.Util.BaseGestureActivity" />
-        </activity>
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.OrderDetailActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.CreateQrcode" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.CallActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.CustomerPayActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyQrcodeActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyOrderActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyOrderDetailActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyBalanceActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.AboutUsActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyPrizeActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.MyPrizeNewActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.ConfirmPrizeActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.GameActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.BetGameActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.SearchFoodActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.AccountMngNewActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.RecordRechargeActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.ui.RecordBalanceActivity" android:screenOrientation="portrait" />
-        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnear.ags.customerclient.CordovaApp" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
 </manifest>
